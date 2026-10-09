@@ -1,0 +1,8 @@
+services:
+  postgres:
+    image: postgres:16
+    ports: ["5433:5432"]
+    environment:
+      POSTGRES_DB: admin_audit
+      POSTGRES_USER: admin_audit
+      POSTGRES_PASSWORD: change-me-locally
